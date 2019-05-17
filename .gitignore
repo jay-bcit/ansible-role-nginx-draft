@@ -1,7 +1,7 @@
 *.log
 *.retry
-*/.vagrant/
-*/venv/
-*/roles/public/
+.vagrant/
+venv/
+roles/public/
 solutions/
 
