@@ -53,4 +53,4 @@
           allow 127.0.0.1;
           deny all;
       }
-    backup: yes
+    backup: true
