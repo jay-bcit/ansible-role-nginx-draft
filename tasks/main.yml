@@ -56,3 +56,4 @@
           }
 
 - include_tasks: exporter.yml
+- include_tasks: uri.yml

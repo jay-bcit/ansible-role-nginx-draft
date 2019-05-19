@@ -23,7 +23,7 @@
     src: $HOME/nginx-prometheus-exporter-0.3.0-linux-amd64.tar.gz
     #src: $HOME/nginx-prometheus-exporter-0.3.0-linux-i386.tar.gz
     dest: /usr/local/bin
-    remote_src: yes
+    remote_src: true
 
 
 - name: Template a file to dest
@@ -38,4 +38,4 @@
   systemd:
     state: started
     name: nginx_exporter
-    enabled: yes
+    enabled: true
