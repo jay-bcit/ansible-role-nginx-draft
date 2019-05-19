@@ -54,3 +54,6 @@
               allow 127.0.0.1;
               deny all;
           }
+
+- name: including exporter.yaml
+  include_plalybook: exporter.yml
