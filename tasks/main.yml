@@ -55,5 +55,4 @@
               deny all;
           }
 
-- name: including exporter.yaml
-  include_plalybook: exporter.yml
+include_plalybook: exporter.yml
