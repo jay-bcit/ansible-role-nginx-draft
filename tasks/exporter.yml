@@ -18,7 +18,7 @@
     dest: $HOME
     mode: '0440'
     checksum: sha256:https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.3.0/sha256sums.txt
-    checksum: sha256:31de68284339041fc5539f3b5431276989bea3de3705d932e80cc9f89cc9b21a
+    #checksum: sha256:31de68284339041fc5539f3b5431276989bea3de3705d932e80cc9f89cc9b21a
 
 - name: Unarchive a file that is already on the remote machine
   unarchive:
