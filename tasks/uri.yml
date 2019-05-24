@@ -1,12 +1,12 @@
 ---
 - name: fail playbook when GET request to port 9113/metrics does not return 'nginx_up 1'
-  # (this metric confirms exporter is collecting metrics from nginx service).
+  #(this metric confirms exporter is collecting metrics from nginx service).
   uri:
     url: http://localhost:9113/metrics
     method: GET
     return_content: true
-  register: this
-  failed_when: "'nginx_up 1' not in this.content"
+  register: 9113_metrics
+  failed_when: "'nginx_up 1' not in 9113_metrics.content"
 
 - name: fail playbook when GET request to port 80 (web server default home page) does not return status code 200.
   uri:
