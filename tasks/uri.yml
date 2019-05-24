@@ -6,7 +6,7 @@
     method: GET
     return_content: true
   register: this
-  failed_when: "'nginx_up 1' not in 9113_metrics.content"
+  failed_when: "'nginx_up 1' not in this.content"
 
 - name: fail playbook when GET request to port 80 (web server default home page) does not return status code 200.
   uri:
